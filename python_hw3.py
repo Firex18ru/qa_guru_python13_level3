@@ -6,11 +6,11 @@ def test_greeting():
     name = "Анна"
     age = 25
     # TODO Сформируйте нужную строку
-    output = ("Привет, " + name +"! " + "Тебе " + str(age) + " лет.")
+    output = f'Привет, {name}! Тебе {age} лет.'
 
     # Проверяем результат
     assert output == "Привет, Анна! Тебе 25 лет."
-
+    print(output)
 
 def test_rectangle():
     a = 10
@@ -38,7 +38,8 @@ def test_circle():
     length = 2 * pi * r
 
     assert length == 144.51326206513048
-
+    print(f'square  = {area}')
+    print(f'circle = {length}')
 
 def test_random_list():
 
